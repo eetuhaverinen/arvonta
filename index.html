@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tasapuolinen arvontakone</title>
+    <link rel="stylesheet" type="text/css" href="tyyli.css">
+    <link rel="stylesheet" type="text/css" href="revolver.css">
+</head>
+<body>
+    <container class="contsu">
+    <h1>Tasapuolinen arvontakone</h1>
+    <form id="participantsForm">
+        <input type="text" id="participant" placeholder="Syota osallistujan nimi">
+        <button type="submit">Lisaa osallistuja</button>
+    </form>
+    <h2>Osallistujat:</h2>
+    <ul id="participantsList">
+    </ul>
+    <button class="but" id="start">Aloita arvonta</button>
+    <button class="but" id="delete">Tyhjennä</button>
+    <h2 id="result"></h2>
+    <div id="animationContainer">
+      <!-- Tähän tulee animaatio kun arvonta käynnistetään -->
+    </div>
+    <button id="showScores">Näytä tulokset</button>
+    <div id="scoreboard" style="display: none;">
+        <h2>Viimeiset tulokset:</h2>
+        <ul id="scoresList"></ul>
+        <button id="closeScores">Sulje</button>
+    </div>
+</container>
+    <script src="script.js"></script>
+</body>
+</html>
